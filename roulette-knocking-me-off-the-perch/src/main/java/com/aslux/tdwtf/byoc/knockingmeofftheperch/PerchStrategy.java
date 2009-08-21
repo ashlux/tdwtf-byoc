@@ -11,13 +11,12 @@ public class PerchStrategy
         int successCount = 0;
 
         PerchStrategy perchStrategy = new PerchStrategy();
-        for ( int i = 0; i < 100000; ++i )
+        for ( int i = 0; i < 1000000; ++i )
         {
             ++count;
-            long finalBankroll = perchStrategy.simulate( 10, 1, 20 );
+            long finalBankroll = perchStrategy.simulate( 10, 1, 400 );
             if ( finalBankroll > 0 )
             {
-//                System.out.println( finalBankroll );
                 ++successCount;
             }
         }

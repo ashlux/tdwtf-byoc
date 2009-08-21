@@ -8,6 +8,8 @@ public class RouletteWheel
 {
     private final List<RouletteSlot> rouletteWheel = new LinkedList<RouletteSlot>();
 
+    private Random random = new Random();
+
     public RouletteWheel()
     {
         rouletteWheel.add( new RouletteSlot( Color.GREEN, "0" ) );
@@ -29,7 +31,7 @@ public class RouletteWheel
 
     public RouletteSlot spinWheel()
     {
-        int chosenIndex = new Random().nextInt( rouletteWheel.size() );
+        int chosenIndex = random.nextInt( rouletteWheel.size() );
         return rouletteWheel.get( chosenIndex );
     }
 }
