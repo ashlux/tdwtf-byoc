@@ -6,24 +6,26 @@ import java.util.Random;
 
 public class RouletteWheel
 {
-    private final List<RouletteSlot> rouletteWheel = new LinkedList<RouletteSlot>()
-    {{
-            rouletteWheel.add( new RouletteSlot( Color.GREEN, "0" ) );
-            rouletteWheel.add( new RouletteSlot( Color.GREEN, "00" ) );
+    private final List<RouletteSlot> rouletteWheel = new LinkedList<RouletteSlot>();
 
-            for ( int i = 1; i <= 36; ++i )
+    public RouletteWheel()
+    {
+        rouletteWheel.add( new RouletteSlot( Color.GREEN, "0" ) );
+        rouletteWheel.add( new RouletteSlot( Color.GREEN, "00" ) );
+
+        for ( int i = 1; i <= 36; ++i )
+        {
+            // even = red, odd = black
+            if ( i % 2 == 0 )
             {
-                // even = red, odd = black
-                if ( i % 2 == 0 )
-                {
-                    rouletteWheel.add( new RouletteSlot( Color.RED, String.valueOf( i ) ) );
-                }
-                else
-                {
-                    rouletteWheel.add( new RouletteSlot( Color.BLACK, String.valueOf( i ) ) );
-                }
+                rouletteWheel.add( new RouletteSlot( Color.RED, String.valueOf( i ) ) );
             }
-        }};
+            else
+            {
+                rouletteWheel.add( new RouletteSlot( Color.BLACK, String.valueOf( i ) ) );
+            }
+        }
+    }
 
     public RouletteSlot spinWheel()
     {
