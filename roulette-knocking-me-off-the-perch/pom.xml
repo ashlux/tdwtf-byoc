@@ -12,6 +12,8 @@
   <groupId>com.ashlux.tdwtf.byoc</groupId>
   <artifactId>roulette-knocking-me-off-the-perch</artifactId>
   <version>1.0</version>
+  <name>Knocking Me Off the Perch (Roulette)</name>
+  <url>http://thedailywtf.com/Articles/Knocking-Me-Off-The-Perch.aspx</url>
 
   <dependencies>
     <dependency>
