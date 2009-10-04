@@ -11,6 +11,7 @@
 
   <modules>
     <module>roulette-knocking-me-off-the-perch</module>
+    <module>string-calculator-kata</module>
   </modules>
 
   <build>
