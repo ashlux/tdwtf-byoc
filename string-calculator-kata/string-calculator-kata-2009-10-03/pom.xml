@@ -12,6 +12,8 @@
 
   <groupId>com.ashlux.tdwtf.byoc</groupId>
   <artifactId>string-calculator-kata-2009-10-03</artifactId>
+  <name>Simple String Calculator Kata from 2009-10-03</name>
+  <packaging>jar</packaging>
 
   <dependencies>
     <dependency>
