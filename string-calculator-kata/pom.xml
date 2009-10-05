@@ -6,9 +6,10 @@
   <groupId>com.ashlux.tdwtf.byoc</groupId>
   <artifactId>string-calculator-kata</artifactId>
   <version>1.0</version>
-  <modules>
-    <module>../string-calculator-kata-2009-10-03</module>
-  </modules>
   <packaging>pom</packaging>
+
+  <modules>
+    <module>string-calculator-kata-2009-10-03</module>
+  </modules>
 
 </project>

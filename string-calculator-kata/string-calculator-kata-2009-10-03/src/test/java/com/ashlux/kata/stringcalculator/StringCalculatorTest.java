@@ -49,9 +49,4 @@ public class StringCalculatorTest
     {
         assertEquals( stringCalculator.add( "//*\n1*2*3" ), 6 );
     }
-
-    @Test(description = "Negative number not allowed.")
-    public void add_oneNegativeNumber()
-    {
-    }
 }
